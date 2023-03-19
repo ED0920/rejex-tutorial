@@ -1,19 +1,30 @@
 # Regex Tutorial Starter Code
 
-regex,
+## Summary 
+ A **regex**, which is short for **regular expression**, is a sequence of characters that defines a specific search pattern. When included in code or search algorithms, regular expressions can be used to find certain patterns of characters within a string, or to find and replace a character or sequence of characters within a string. They are also frequently used to validate input. 
+ 
+ This tutorial explain how a regular expression for email validation functions. Each part is broken down to describe how it works. 
 
-literal charachers in a string,
+In this tutorial, we will be using `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/` to verify if a user enters in a valid email address.
 
-'meta character' general patter not single character
+## User Story
 
-/d is a meta characher
+```md
+AS A web development student
+I WANT a tutorial explaining a specific regex
+SO THAT I can understand the search pattern the regex defines
+```
 
-example 917-555-1234
-/d/d/d - /d/d/d
-numbers
-/d->0-9
-/d/d/d-
+## Acceptance Criteria
 
-when using control find, can change to regex to find any sequence with /d/d/d-/d/d/d-/d/d/d
-
-'*' regular expression
+```md
+GIVEN a regex tutorial
+WHEN I open the tutorial
+THEN I see a descriptive title and introductory paragraph explaining the purpose of the tutorial, a summary describing the regex featured in the tutorial, a table of contents linking to different sections that break down each component of the regex and explain what it does, and a section about the author with a link to the author’s GitHub profile
+WHEN I click on the links in the table of contents
+THEN I am taken to the corresponding sections of the tutorial
+WHEN I read through each section of the tutorial
+THEN I find a detailed explanation of what a specific component of the regex does
+WHEN I reach the end of the tutorial
+THEN I find a section about the author and a link to the author’s GitHub profile
+```
